@@ -15,13 +15,13 @@ class CosmsControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create cosm" do
-    assert_difference('Cosm.count') do
-      post cosms_url, params: { cosm: { brand_id: @cosm.brand_id, gender_id: @cosm.gender_id, name: @cosm.name, price: @cosm.price, use_id: @cosm.use_id } }
-    end
+  # test "should create cosm" do
+    # assert_difference('Cosm.count') do
+    # post cosms_url, params: { cosm: { brand_id: @cosm.brand_id, gender_id: @cosm.gender_id, name: @cosm.name, price: @cosm.price, use_id: @cosm.use_id } }
+    # end
 
-    assert_redirected_to cosm_path(Cosm.last)
-  end
+    # assert_redirected_to cosm_path(Cosm.last)
+  # end
 
   test "should show cosm" do
     get cosm_url(@cosm)
