@@ -15,13 +15,13 @@ class UsesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create use" do
-    assert_difference('Use.count') do
-      post uses_url, params: { use: { cate: @use.cate } }
-    end
+  # test "should create use" do
+    # assert_difference('Use.count') do
+      # post uses_url, params: { use: { cate: @use.cate } }
+    # end
 
-    assert_redirected_to use_path(Use.last)
-  end
+    # assert_redirected_to use_path(Use.last)
+  # end
 
   test "should show use" do
     get use_url(@use)

@@ -15,13 +15,13 @@ class GendersControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should create gender" do
-    assert_difference('Gender.count') do
-      post genders_url, params: { gender: { cate: @gender.cate } }
-    end
+  # test "should create gender" do
+    # assert_difference('Gender.count') do
+      # post genders_url, params: { gender: { cate: @gender.cate } }
+    # end
 
-    assert_redirected_to gender_path(Gender.last)
-  end
+    # assert_redirected_to gender_path(Gender.last)
+  # end
 
   test "should show gender" do
     get gender_url(@gender)
