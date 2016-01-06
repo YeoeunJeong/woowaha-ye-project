@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @co.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @co.price %>
+</p>
+
+<%= link_to 'Edit', edit_co_path(@co) %> |
+<%= link_to 'Back', cos_path %>
