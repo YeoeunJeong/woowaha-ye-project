@@ -1,2 +1,4 @@
-class Api::CoController < ApplicationController
+module Api
+  class CoController < ApplicationController
+  end
 end
