@@ -1,3 +1,3 @@
 class Gender < ApplicationRecord
-  has_many :cosm
+  has_many :cosms
 end
