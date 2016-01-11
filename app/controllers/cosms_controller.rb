@@ -37,11 +37,12 @@ class CosmsController < ApplicationController
   end
 
   private
-    def set_cosm
-      @cosm = Cosm.find(params[:id])
-    end
 
-    def cosm_params
-      params.require(:cosm).permit(:name, :price, :brand_id, :use_id, :gender_id)
-    end
+  def set_cosm
+    @cosm = Cosm.find(params[:id])
+  end
+
+  def cosm_params
+    params.require(:cosm).permit(:name, :price, :brand_id, :use_id, :gender_id)
+  end
 end

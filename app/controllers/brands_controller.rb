@@ -37,11 +37,12 @@ class BrandsController < ApplicationController
   end
 
   private
-    def set_brand
-      @brand = Brand.find(params[:id])
-    end
 
-    def brand_params
-      params.require(:brand).permit(:name, :manufacturer_id)
-    end
+  def set_brand
+    @brand = Brand.find(params[:id])
+  end
+
+  def brand_params
+    params.require(:brand).permit(:name, :manufacturer_id)
+  end
 end

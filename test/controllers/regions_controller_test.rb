@@ -5,17 +5,17 @@ class RegionsControllerTest < ActionDispatch::IntegrationTest
     @region = regions(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get regions_url
     assert_response :success
   end
 
-  test "should get new" do
+  test 'should get new' do
     get new_region_url
     assert_response :success
   end
 
-  test "should create region" do
+  test 'should create region' do
     assert_difference('Region.count') do
       post regions_url, params: { region: { name: @region.name } }
     end
@@ -23,22 +23,22 @@ class RegionsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to region_path(Region.last)
   end
 
-  test "should show region" do
+  test 'should show region' do
     get region_url(@region)
     assert_response :success
   end
 
-  test "should get edit" do
+  test 'should get edit' do
     get edit_region_url(@region)
     assert_response :success
   end
 
-  test "should update region" do
+  test 'should update region' do
     patch region_url(@region), params: { region: { name: @region.name } }
     assert_redirected_to region_path(@region)
   end
 
-  test "should destroy region" do
+  test 'should destroy region' do
     assert_difference('Region.count', -1) do
       delete region_url(@region)
     end

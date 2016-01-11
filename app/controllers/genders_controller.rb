@@ -43,11 +43,11 @@ class GendersController < ApplicationController
 
   private
 
-    def set_gender
-      @gender = Gender.find(params[:id])
-    end
+  def set_gender
+    @gender = Gender.find(params[:id])
+  end
 
-    def gender_params
-      params.require(:gender).permit(:cate)
-    end
+  def gender_params
+    params.require(:gender).permit(:cate)
+  end
 end

@@ -37,11 +37,12 @@ class UsesController < ApplicationController
   end
 
   private
-    def set_use
-      @use = Use.find(params[:id])
-    end
 
-    def use_params
-      params.require(:use).permit(:cate)
-    end
+  def set_use
+    @use = Use.find(params[:id])
+  end
+
+  def use_params
+    params.require(:use).permit(:cate)
+  end
 end

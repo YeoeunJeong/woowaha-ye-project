@@ -37,11 +37,12 @@ class ManufacturersController < ApplicationController
   end
 
   private
-    def set_manufacturer
-      @manufacturer = Manufacturer.find(params[:id])
-    end
 
-    def manufacturer_params
-      params.require(:manufacturer).permit(:name)
-    end
+  def set_manufacturer
+    @manufacturer = Manufacturer.find(params[:id])
+  end
+
+  def manufacturer_params
+    params.require(:manufacturer).permit(:name)
+  end
 end
