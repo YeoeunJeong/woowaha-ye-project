@@ -1,9 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Cate:</strong>
-  <%= @gender.cate %>
+  <strong>Cate: &nbsp;&nbsp; <%= @gender.cate %> </strong> 에 속한 화장품 목록
 </p>
 
+
+<table>
+  <thead> 
+    <tr> 
+      <td> 화장품이름 </td>
+      <td> 가격 </td> 
+    </tr>
+  </thead>
+  <body>
+  <% @cosms.each do |cosm| %>
+    <tr>
+      <td><%= link_to cosm.name, cosm %></td>
+      <td><%= cosm.price %></td>
+    </tr>
+  <% end %>
+  </body>
+</table>
 <%= link_to 'Edit', edit_gender_path(@gender) %> |
 <%= link_to 'Back', genders_path %>

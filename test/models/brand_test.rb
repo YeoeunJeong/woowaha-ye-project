@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class Api::CosmsControllerTest < ActionDispatch::IntegrationTest
+class BrandTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
